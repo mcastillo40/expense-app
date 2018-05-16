@@ -26,7 +26,8 @@ module.exports = (env) => {
         mode: isProduction ? 'production' : 'development',
         devtool: "cheap-module-eval-source-map",
         devServer: {
-            contentBase: path.join(__dirname, 'public')
+            contentBase: path.join(__dirname, 'public'),
+            historyApiFallback: true
         }
     }
 };
